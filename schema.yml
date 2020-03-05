@@ -1,0 +1,46 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Events
+  description: Polymorphism example
+paths: { }
+components:
+  schemas:
+    Arg:
+      type: object
+      discriminator:
+        propertyName: argType
+      properties:
+        argType:
+          type: string
+      required:
+        - argType
+    VideoStarted:
+      description: 'The video is started'
+      allOf:
+        - $ref: '#/components/schemas/Arg'
+        - type: object
+          properties:
+            videoUrl:
+              type: string
+    Navigated:
+      description: 'The user performed navigation'
+      allOf:
+        - $ref: '#/components/schemas/Arg'
+        - type: object
+          properties:
+            newPath:
+              type: string
+    Args:
+      type: array
+      items:
+        $ref: "#/components/schemas/Arg"
+    Event:
+      type: object
+      properties:
+        timestamp:
+          type: string
+        args:
+          $ref: "#/components/schemas/Arg"
+      required:
+        - argType
