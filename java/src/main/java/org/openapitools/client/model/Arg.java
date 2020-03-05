@@ -31,7 +31,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
   Arg.JSON_PROPERTY_ARG_TYPE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-03-05T14:23:16.192147+01:00[Europe/Budapest]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-03-05T14:37:31.390937+01:00[Europe/Budapest]")
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY, property = "argType", visible = true)
 @JsonSubTypes({
   @JsonSubTypes.Type(value = VideoStarted.class, name = "VideoStarted"),

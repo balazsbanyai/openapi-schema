@@ -29,7 +29,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
   NavigatedAllOf.JSON_PROPERTY_NEW_PATH
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-03-05T14:23:16.192147+01:00[Europe/Budapest]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-03-05T14:37:31.390937+01:00[Europe/Budapest]")
 public class NavigatedAllOf {
   public static final String JSON_PROPERTY_NEW_PATH = "newPath";
   private String newPath;

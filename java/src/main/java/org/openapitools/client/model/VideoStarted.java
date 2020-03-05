@@ -32,7 +32,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
   VideoStarted.JSON_PROPERTY_VIDEO_URL
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-03-05T14:23:16.192147+01:00[Europe/Budapest]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-03-05T14:37:31.390937+01:00[Europe/Budapest]")
 public class VideoStarted extends Arg {
   public static final String JSON_PROPERTY_VIDEO_URL = "videoUrl";
   private String videoUrl;
